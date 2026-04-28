@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+  </head>
+  <body>
+    <script>
+      //Primero se tiene que recibir una cadena y pasar todo a minusculas, luego
+      //seleccionar el primer caracter y aplicar un uppercase
+
+      /*
+
+      function capitilize(word) {
+        word = word.toLowerCase();
+        restOfString = word.slice(1);
+        firsChar = word[0].toUpperCase();
+        concatString = firsChar.concat("", restOfString);
+        return concatString;
+      }
+      console.log(capitilize("aBcD"));
+
+      */
+
+      let lastLetter = (word) => word.at(-1);
+
+      console.log(lastLetter("JavaScript is cool!"));
+    </script>
+  </body>
+</html>
