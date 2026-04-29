@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3</title>
+  </head>
+  <body>
+    <script>
+      // Necesitamos primero pedir un número y seguir hasta que el input sea
+      // un número mayor que 100
+      /*
+      let number = 0;
+      while (number < 100) {
+        number = prompt("Type a number greater than 100: ");
+        if (!number) {
+          break;
+        }
+      }
+        */
+
+      let num;
+
+      do {
+        num = prompt("Enter a number greater than 100?", 0);
+      } while (num <= 100 && num);
+    </script>
+  </body>
+</html>
