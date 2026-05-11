@@ -10,7 +10,18 @@
       //Prime numbers
       //Tenemos que determinar una condicion donde n solo sea divisible entre
       // 1 y n
-      for (let i = 1; i < 20; i++) {}
+      let n = 10;
+
+      nextPrime: for (let i = 2; i <= n; i++) {
+        // for each i...
+
+        for (let j = 2; j < i; j++) {
+          // look for a divisor..
+          if (i % j == 0) continue nextPrime; // not a prime, go next i
+        }
+
+        alert(i); // a prime
+      }
     </script>
   </body>
 </html>
