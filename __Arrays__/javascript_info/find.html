@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find</title>
+  </head>
+  <body>
+    <script>
+      //  let users = [
+      //    { id: 1, name: "John" },
+      //    { id: 2, name: "Pete" },
+      //    { id: 3, name: "Mary" },
+      //  ];
+
+      //  let user = users.find((item) => item.id == 1);
+
+      //  alert(user.name); // John
+
+      //let users = [
+      //  { id: 1, name: "John" },
+      //  { id: 2, name: "Pete" },
+      //  { id: 3, name: "Mary" },
+      //  { id: 4, name: "John" },
+      //];
+
+      //   let userIndex = users.findIndex((user) => user.name == "Jon");
+      //let userIndex = users.findLastIndex((user) => user.name == "John");
+
+      //alert(userIndex);
+      let users = [
+        { id: 1, name: "John" },
+        { id: 2, name: "Pete" },
+        { id: 3, name: "Mary" },
+      ];
+      let someUsers = users.filter((item) => item.id < 3);
+      alert(someUsers.length); // 2
+    </script>
+  </body>
+</html>
