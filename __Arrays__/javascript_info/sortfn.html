@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort fn</title>
+  </head>
+  <body>
+    <script>
+      //function compareNumeric(a, b) {
+      //  if (a > b) return 1;
+      //  if (a == b) return 0;
+      //  if (a < b) return -1;
+      //}
+
+      //let arr = [1, 2, 15];
+
+      //arr.sort(compareNumeric);
+
+      //alert(arr); // 1, 2, 15
+      let countries = ["Österreich", "Andorra", "Vietnam"];
+      alert(countries.sort((a, b) => (a > b ? 1 : -1))); // Andorra, Vietnam, Österreich (wrong)
+      alert(countries.sort((a, b) => a.localeCompare(b))); // Andorra,Österreich,Vietnam (correct!)
+    </script>
+  </body>
+</html>

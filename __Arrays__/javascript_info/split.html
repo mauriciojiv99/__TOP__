@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split</title>
+  </head>
+  <body>
+    <script>
+      let charactersShonenJumpString = "Luffy, Goku, Naruto";
+      let charactersShonenJumpArray = charactersShonenJumpString.split(", ");
+      charactersShonenJumpArray.forEach((character) => {
+        console.log(character);
+      });
+
+      for (let character of charactersShonenJumpArray) {
+        console.log(character);
+      }
+
+      let countriesArray = ["Mexico", "Spain", "China", "Japan", "Korea"];
+      console.log(countriesArray);
+      let countriesString = countriesArray.join(";");
+      console.log(countriesString);
+    </script>
+  </body>
+</html>
